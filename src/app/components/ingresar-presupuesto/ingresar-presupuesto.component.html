@@ -1,0 +1,14 @@
+<div class="row my-3 py-3 d-flex justify-content-center align-items-center">
+  <div class="my-3 col-12 col-lg-6 bg-primary">
+    <h2 class="text-center h2 fontTittle">Ingrese Presupuesto</h2>
+    <div class="card my-2">
+      <div class="card-body">
+        <div *ngIf="cantidadIncorrecta" class="text-center my-2 textError">
+          <span class="badge bg-danger text-uppercase">Presupuesto no valido</span>
+        </div>
+        <input type="number" [(ngModel)]="cantidad" name="" id="" autofocus placeholder="Ingrese Presupuesto"class="form-control form-control-lg">
+        <button class="btn btn-lg btn-block btn-secondary text-uppercase my-2" (click)="agregar()" >Agregar</button>
+      </div>
+    </div>
+  </div>
+</div>
